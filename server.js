@@ -25,7 +25,6 @@ mongoose.connect(
 }).then(() => console.log('connected to db'))
 .catch(err=> console.error('an error has occured', err));
 
-// routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
